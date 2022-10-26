@@ -1,12 +1,15 @@
+# import section
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
 # app.config.from_object(__name__)
 
+#routes for homepage
 @app.route('/')
 def welcome():
     return render_template('form.html')
 
+#routes for calculator
 @app.route('/', methods=['POST'])
 def result():
     var_1 = request.form.get("var_1", type=int, default=0)
