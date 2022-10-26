@@ -1,0 +1,4 @@
+#please ignore files notest.txt
+notest.txt
+#please ignore the images
+*.img
